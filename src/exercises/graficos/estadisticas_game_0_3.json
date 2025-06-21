@@ -1,0 +1,22 @@
+{
+  "lambda=0.2_k=0": {
+    "media": 2.5,
+    "mediana": 2.0,
+    "desviacion": 0.5
+  },
+  "lambda=1_k=0": {
+    "media": 2.5,
+    "mediana": 2.0,
+    "desviacion": 0.5
+  },
+  "lambda=0.2_k=2": {
+    "media": 2.526224871608866,
+    "mediana": 3.0,
+    "desviacion": 0.499311782465724
+  },
+  "lambda=1_k=2": {
+    "media": 2.6507776782147,
+    "mediana": 3.0,
+    "desviacion": 0.4767243351793406
+  }
+}

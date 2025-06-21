@@ -4,8 +4,28 @@ import os
 import json
 import numpy as np
 import time
+from datetime import datetime
 from ch24 import  IteratedBestResponse,NashEquilibrium, HierarchicalSoftmax
 from problems.SimpleGames import TravelersDilemma
+
+
+class SimpleLogger:
+    def __init__(self, filename):
+        self.terminal = sys.stdout
+        self.log = open(filename, "w", encoding='utf-8')
+
+    def write(self, message):
+        self.terminal.write(message)
+        self.log.write(message)
+        self.log.flush()
+
+    def flush(self):
+        self.terminal.flush()
+        self.log.flush()
+
+    def close(self):
+        self.log.close()
+
 
 def identify_game(p, v):
     if p == 5 and v == 100:
@@ -149,49 +169,78 @@ def save_all_hierarchical_results(p, v, all_results):
 
     print(f"All Hierarchical Softmax results saved in: {output_path}")
 
-if __name__ == "__main__":
-    time_start_total = time.time()
-    
-    for v in [100,70,20]:  
-        for p in [0,5,35]:
-            if (p == 0 and v == 100) or (p == 5 and v == 20) or (p == 35 and v == 20):
-                pass 
-            else:
-                identify_game(p, v)
-                iden = identifier_game(p, v)
-                print("=========================================================")
-                print(f"Calculate the Nash Equilibrium for Traveler's Dilemma")
-                time_start = time.time()
-                print("Running...")
-                nash_equilibrium_TD(p, v)
-                time_end = time.time()
-                print("Time taken: " + str((time_end - time_start)) + " s")
-                print("\n")
-                print("=========================================================")
-                print("\n")
-                   
-                # Estructura para acumular todos los resultados de Hierarchical Softmax
-                all_hierarchical_results = {}
-                
-                # Parámetros para Hierarchical Softmax
-                lambda_values = [0, 0.5,1,3]  
-                k_iterations = [0, 5,10,20]
 
-                for lam in lambda_values:
-                    for k_it in k_iterations:
-                        time_start = time.time()
-                        try:
-                            hierarchical_softmax_TD(p, v, lam=lam, k=k_it, all_results=all_hierarchical_results)
-                        except Exception as e:
-                            print(f"❌ Error calculando Hierarchical Softmax (λ={lam}): {e}")
-                        time_end = time.time()
-                        print(f"\n ⏱️  Time taken: {time_end - time_start}")
-                        print()
-                
-                # Guardar todos los resultados de Hierarchical Softmax en un solo archivo
-                save_all_hierarchical_results(p, v, all_hierarchical_results)
-                print("=========================================================")
-                print()
-                
-    time_end_total = time.time()
-    print("Total time taken: " + str((time_end_total - time_start_total)) + " s")
+if __name__ == "__main__":
+
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    log_filename = f"execution_log_{timestamp}.txt"
+    
+    log_dir = os.path.join(os.path.dirname(__file__), 'logs')
+    os.makedirs(log_dir, exist_ok=True)
+    log_path = os.path.join(log_dir, log_filename)
+    
+
+    logger = SimpleLogger(log_path)
+    original_stdout = sys.stdout
+    sys.stdout = logger
+    
+    try:
+        print(f"=== EXECUTION STARTED AT {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} ===")
+        print(f"Log will be saved to: {log_path}")
+        print("=" * 60)
+        
+        time_start_total = time.time()
+        
+        for v in [100,70,20]:  
+           for p in [0,5,35]:
+        #for v in [3,5]:
+         #   for p in [0,1]: 
+                if (p == 0 and v == 100) or (p == 5 and v == 20) or (p == 35 and v == 20):
+                    pass 
+                else:
+                    identify_game(p, v)
+                    iden = identifier_game(p, v)
+                    print("=========================================================")
+                    print(f"Calculate the Nash Equilibrium for Traveler's Dilemma")
+                    time_start = time.time()
+                    print("Running...")
+                    nash_equilibrium_TD(p, v)
+                    time_end = time.time()
+                    print("Time taken: " + str((time_end - time_start)) + " s")
+                    print("\n")
+                    print("=========================================================")
+                    print("\n")
+                       
+                    all_hierarchical_results = {}
+                    
+                    lambda_values = [0, 0.5,1,3]  
+                    k_iterations = [0, 5,10,20]
+                    #lambda_values = [1, 0.2]  
+                    #k_iterations = [0, 2]
+                    for lam in lambda_values:
+                        for k_it in k_iterations:
+                            time_start = time.time()
+                            try:
+                                hierarchical_softmax_TD(p, v, lam=lam, k=k_it, all_results=all_hierarchical_results)
+                            except Exception as e:
+                                print(f"❌ Error calculando Hierarchical Softmax (λ={lam}): {e}")
+                            time_end = time.time()
+                            print(f"\n ⏱️  Time taken: {time_end - time_start}")
+                            print()
+                    
+                    save_all_hierarchical_results(p, v, all_hierarchical_results)
+                    print("=========================================================")
+                    print()
+                    
+        time_end_total = time.time()
+        print("Total time taken: " + str((time_end_total - time_start_total)) + " s")
+        print("=" * 60)
+        print(f"=== EXECUTION FINISHED AT {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} ===")
+        
+    except Exception as e:
+        print(f"❌ Error durante la ejecución: {e}")
+        
+    finally:
+        sys.stdout = original_stdout
+        logger.close()
+        print(f"\n📝 Execution log saved to: {log_path}")

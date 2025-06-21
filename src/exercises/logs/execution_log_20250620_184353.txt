@@ -1,0 +1,438 @@
+=== EXECUTION STARTED AT 2025-06-20 18:43:53 ===
+Log will be saved to: /home/pop/Documents/Carrera/tomacode/decisionmaking-code-py/src/exercises/logs/execution_log_20250620_184353.txt
+============================================================
+=========================================================
+Calculate the Nash Equilibrium for Traveler's Dilemma
+Running...
+
+ Running a Nash Equilibrium
+   • Penalty: 0
+   • Real Value: 3
+
+Agent 0:
+   • Estrategy 2: 1.0000 (100.00%)
+   • Estrategy 3: -0.0000 (-0.00%)
+
+Agent 1:
+   • Estrategy 2: 1.0000 (100.00%)
+   • Estrategy 3: -0.0000 (-0.00%)
+
+Complete policies saved in: /home/pop/Documents/Carrera/tomacode/decisionmaking-code-py/src/exercises/datos/nash_equilibrium_game_0_3.json
+Time taken: 0.775029182434082 s
+
+
+=========================================================
+
+
+Running a Hierarchical Softmax
+   • Penalty: 0
+   • Real Value: 3
+   • Precision (λ): 1
+   • Depths of rationality (k): 0
+
+Results of Hierarchical Softmax:
+Agent 1:
+   • Strategy 2: 0.5000 (50.00%)
+   • Strategy 3: 0.5000 (50.00%)
+
+Agent 2:
+   • Strategy 2: 0.5000 (50.00%)
+   • Strategy 3: 0.5000 (50.00%)
+
+
+ ⏱️  Time taken: 0.001119375228881836
+
+Running a Hierarchical Softmax
+   • Penalty: 0
+   • Real Value: 3
+   • Precision (λ): 1
+   • Depths of rationality (k): 2
+
+Results of Hierarchical Softmax:
+Agent 1:
+   • Strategy 3: 0.6508 (65.08%)
+   • Strategy 2: 0.3492 (34.92%)
+
+Agent 2:
+   • Strategy 3: 0.6508 (65.08%)
+   • Strategy 2: 0.3492 (34.92%)
+
+
+ ⏱️  Time taken: 0.0020825862884521484
+
+Running a Hierarchical Softmax
+   • Penalty: 0
+   • Real Value: 3
+   • Precision (λ): 0.2
+   • Depths of rationality (k): 0
+
+Results of Hierarchical Softmax:
+Agent 1:
+   • Strategy 2: 0.5000 (50.00%)
+   • Strategy 3: 0.5000 (50.00%)
+
+Agent 2:
+   • Strategy 2: 0.5000 (50.00%)
+   • Strategy 3: 0.5000 (50.00%)
+
+
+ ⏱️  Time taken: 0.0007619857788085938
+
+Running a Hierarchical Softmax
+   • Penalty: 0
+   • Real Value: 3
+   • Precision (λ): 0.2
+   • Depths of rationality (k): 2
+
+Results of Hierarchical Softmax:
+Agent 1:
+   • Strategy 3: 0.5262 (52.62%)
+   • Strategy 2: 0.4738 (47.38%)
+
+Agent 2:
+   • Strategy 3: 0.5262 (52.62%)
+   • Strategy 2: 0.4738 (47.38%)
+
+
+ ⏱️  Time taken: 0.004484415054321289
+
+All Hierarchical Softmax results saved in: /home/pop/Documents/Carrera/tomacode/decisionmaking-code-py/src/exercises/datos/hierarchical_softmax_game_0_3.json
+=========================================================
+
+=========================================================
+Calculate the Nash Equilibrium for Traveler's Dilemma
+Running...
+
+ Running a Nash Equilibrium
+   • Penalty: 1
+   • Real Value: 3
+
+Agent 0:
+   • Estrategy 3: 1.0000 (100.00%)
+   • Estrategy 2: -0.0000 (-0.00%)
+
+Agent 1:
+   • Estrategy 3: 1.0000 (100.00%)
+   • Estrategy 2: -0.0000 (-0.00%)
+
+Complete policies saved in: /home/pop/Documents/Carrera/tomacode/decisionmaking-code-py/src/exercises/datos/nash_equilibrium_game_1_3.json
+Time taken: 0.031699180603027344 s
+
+
+=========================================================
+
+
+Running a Hierarchical Softmax
+   • Penalty: 1
+   • Real Value: 3
+   • Precision (λ): 1
+   • Depths of rationality (k): 0
+
+Results of Hierarchical Softmax:
+Agent 1:
+   • Strategy 2: 0.5000 (50.00%)
+   • Strategy 3: 0.5000 (50.00%)
+
+Agent 2:
+   • Strategy 2: 0.5000 (50.00%)
+   • Strategy 3: 0.5000 (50.00%)
+
+
+ ⏱️  Time taken: 0.0011928081512451172
+
+Running a Hierarchical Softmax
+   • Penalty: 1
+   • Real Value: 3
+   • Precision (λ): 1
+   • Depths of rationality (k): 2
+
+Results of Hierarchical Softmax:
+Agent 1:
+   • Strategy 2: 0.6508 (65.08%)
+   • Strategy 3: 0.3492 (34.92%)
+
+Agent 2:
+   • Strategy 2: 0.6508 (65.08%)
+   • Strategy 3: 0.3492 (34.92%)
+
+
+ ⏱️  Time taken: 0.002672433853149414
+
+Running a Hierarchical Softmax
+   • Penalty: 1
+   • Real Value: 3
+   • Precision (λ): 0.2
+   • Depths of rationality (k): 0
+
+Results of Hierarchical Softmax:
+Agent 1:
+   • Strategy 2: 0.5000 (50.00%)
+   • Strategy 3: 0.5000 (50.00%)
+
+Agent 2:
+   • Strategy 2: 0.5000 (50.00%)
+   • Strategy 3: 0.5000 (50.00%)
+
+
+ ⏱️  Time taken: 0.0009772777557373047
+
+Running a Hierarchical Softmax
+   • Penalty: 1
+   • Real Value: 3
+   • Precision (λ): 0.2
+   • Depths of rationality (k): 2
+
+Results of Hierarchical Softmax:
+Agent 1:
+   • Strategy 2: 0.5262 (52.62%)
+   • Strategy 3: 0.4738 (47.38%)
+
+Agent 2:
+   • Strategy 2: 0.5262 (52.62%)
+   • Strategy 3: 0.4738 (47.38%)
+
+
+ ⏱️  Time taken: 0.0018017292022705078
+
+All Hierarchical Softmax results saved in: /home/pop/Documents/Carrera/tomacode/decisionmaking-code-py/src/exercises/datos/hierarchical_softmax_game_1_3.json
+=========================================================
+
+=========================================================
+Calculate the Nash Equilibrium for Traveler's Dilemma
+Running...
+
+ Running a Nash Equilibrium
+   • Penalty: 0
+   • Real Value: 5
+
+Agent 0:
+   • Estrategy 2: 1.0000 (100.00%)
+   • Estrategy 3: -0.0000 (-0.00%)
+   • Estrategy 4: -0.0000 (-0.00%)
+   • Estrategy 5: -0.0000 (-0.00%)
+
+Agent 1:
+   • Estrategy 2: 1.0000 (100.00%)
+   • Estrategy 3: -0.0000 (-0.00%)
+   • Estrategy 4: -0.0000 (-0.00%)
+   • Estrategy 5: -0.0000 (-0.00%)
+
+Complete policies saved in: /home/pop/Documents/Carrera/tomacode/decisionmaking-code-py/src/exercises/datos/nash_equilibrium_game_0_5.json
+Time taken: 0.0642087459564209 s
+
+
+=========================================================
+
+
+Running a Hierarchical Softmax
+   • Penalty: 0
+   • Real Value: 5
+   • Precision (λ): 1
+   • Depths of rationality (k): 0
+
+Results of Hierarchical Softmax:
+Agent 1:
+   • Strategy 2: 0.2500 (25.00%)
+   • Strategy 3: 0.2500 (25.00%)
+   • Strategy 4: 0.2500 (25.00%)
+   • Strategy 5: 0.2500 (25.00%)
+
+Agent 2:
+   • Strategy 2: 0.2500 (25.00%)
+   • Strategy 3: 0.2500 (25.00%)
+   • Strategy 4: 0.2500 (25.00%)
+   • Strategy 5: 0.2500 (25.00%)
+
+
+ ⏱️  Time taken: 0.0003135204315185547
+
+Running a Hierarchical Softmax
+   • Penalty: 0
+   • Real Value: 5
+   • Precision (λ): 1
+   • Depths of rationality (k): 2
+
+Results of Hierarchical Softmax:
+Agent 1:
+   • Strategy 5: 0.4709 (47.09%)
+   • Strategy 4: 0.3143 (31.43%)
+   • Strategy 3: 0.1532 (15.32%)
+   • Strategy 2: 0.0617 (6.17%)
+
+Agent 2:
+   • Strategy 5: 0.4709 (47.09%)
+   • Strategy 4: 0.3143 (31.43%)
+   • Strategy 3: 0.1532 (15.32%)
+   • Strategy 2: 0.0617 (6.17%)
+
+
+ ⏱️  Time taken: 0.002346515655517578
+
+Running a Hierarchical Softmax
+   • Penalty: 0
+   • Real Value: 5
+   • Precision (λ): 0.2
+   • Depths of rationality (k): 0
+
+Results of Hierarchical Softmax:
+Agent 1:
+   • Strategy 2: 0.2500 (25.00%)
+   • Strategy 3: 0.2500 (25.00%)
+   • Strategy 4: 0.2500 (25.00%)
+   • Strategy 5: 0.2500 (25.00%)
+
+Agent 2:
+   • Strategy 2: 0.2500 (25.00%)
+   • Strategy 3: 0.2500 (25.00%)
+   • Strategy 4: 0.2500 (25.00%)
+   • Strategy 5: 0.2500 (25.00%)
+
+
+ ⏱️  Time taken: 0.00031447410583496094
+
+Running a Hierarchical Softmax
+   • Penalty: 0
+   • Real Value: 5
+   • Precision (λ): 0.2
+   • Depths of rationality (k): 2
+
+Results of Hierarchical Softmax:
+Agent 1:
+   • Strategy 5: 0.2845 (28.45%)
+   • Strategy 4: 0.2689 (26.89%)
+   • Strategy 3: 0.2409 (24.09%)
+   • Strategy 2: 0.2057 (20.57%)
+
+Agent 2:
+   • Strategy 5: 0.2845 (28.45%)
+   • Strategy 4: 0.2689 (26.89%)
+   • Strategy 3: 0.2409 (24.09%)
+   • Strategy 2: 0.2057 (20.57%)
+
+
+ ⏱️  Time taken: 0.0031976699829101562
+
+All Hierarchical Softmax results saved in: /home/pop/Documents/Carrera/tomacode/decisionmaking-code-py/src/exercises/datos/hierarchical_softmax_game_0_5.json
+=========================================================
+
+=========================================================
+Calculate the Nash Equilibrium for Traveler's Dilemma
+Running...
+
+ Running a Nash Equilibrium
+   • Penalty: 1
+   • Real Value: 5
+
+Agent 0:
+   • Estrategy 3: 0.3333 (33.33%)
+   • Estrategy 2: 0.3333 (33.33%)
+   • Estrategy 5: 0.3333 (33.33%)
+   • Estrategy 4: 0.0000 (0.00%)
+
+Agent 1:
+   • Estrategy 3: 0.3333 (33.33%)
+   • Estrategy 2: 0.3333 (33.33%)
+   • Estrategy 5: 0.3333 (33.33%)
+   • Estrategy 4: 0.0000 (0.00%)
+
+Complete policies saved in: /home/pop/Documents/Carrera/tomacode/decisionmaking-code-py/src/exercises/datos/nash_equilibrium_game_1_5.json
+Time taken: 0.03976249694824219 s
+
+
+=========================================================
+
+
+Running a Hierarchical Softmax
+   • Penalty: 1
+   • Real Value: 5
+   • Precision (λ): 1
+   • Depths of rationality (k): 0
+
+Results of Hierarchical Softmax:
+Agent 1:
+   • Strategy 2: 0.2500 (25.00%)
+   • Strategy 3: 0.2500 (25.00%)
+   • Strategy 4: 0.2500 (25.00%)
+   • Strategy 5: 0.2500 (25.00%)
+
+Agent 2:
+   • Strategy 2: 0.2500 (25.00%)
+   • Strategy 3: 0.2500 (25.00%)
+   • Strategy 4: 0.2500 (25.00%)
+   • Strategy 5: 0.2500 (25.00%)
+
+
+ ⏱️  Time taken: 0.0003142356872558594
+
+Running a Hierarchical Softmax
+   • Penalty: 1
+   • Real Value: 5
+   • Precision (λ): 1
+   • Depths of rationality (k): 2
+
+Results of Hierarchical Softmax:
+Agent 1:
+   • Strategy 3: 0.2938 (29.38%)
+   • Strategy 4: 0.2761 (27.61%)
+   • Strategy 2: 0.2218 (22.18%)
+   • Strategy 5: 0.2084 (20.84%)
+
+Agent 2:
+   • Strategy 3: 0.2938 (29.38%)
+   • Strategy 4: 0.2761 (27.61%)
+   • Strategy 2: 0.2218 (22.18%)
+   • Strategy 5: 0.2084 (20.84%)
+
+
+ ⏱️  Time taken: 0.0022046566009521484
+
+Running a Hierarchical Softmax
+   • Penalty: 1
+   • Real Value: 5
+   • Precision (λ): 0.2
+   • Depths of rationality (k): 0
+
+Results of Hierarchical Softmax:
+Agent 1:
+   • Strategy 2: 0.2500 (25.00%)
+   • Strategy 3: 0.2500 (25.00%)
+   • Strategy 4: 0.2500 (25.00%)
+   • Strategy 5: 0.2500 (25.00%)
+
+Agent 2:
+   • Strategy 2: 0.2500 (25.00%)
+   • Strategy 3: 0.2500 (25.00%)
+   • Strategy 4: 0.2500 (25.00%)
+   • Strategy 5: 0.2500 (25.00%)
+
+
+ ⏱️  Time taken: 0.0002689361572265625
+
+Running a Hierarchical Softmax
+   • Penalty: 1
+   • Real Value: 5
+   • Precision (λ): 0.2
+   • Depths of rationality (k): 2
+
+Results of Hierarchical Softmax:
+Agent 1:
+   • Strategy 3: 0.2567 (25.67%)
+   • Strategy 4: 0.2561 (25.61%)
+   • Strategy 2: 0.2439 (24.39%)
+   • Strategy 5: 0.2433 (24.33%)
+
+Agent 2:
+   • Strategy 3: 0.2567 (25.67%)
+   • Strategy 4: 0.2561 (25.61%)
+   • Strategy 2: 0.2439 (24.39%)
+   • Strategy 5: 0.2433 (24.33%)
+
+
+ ⏱️  Time taken: 0.0024073123931884766
+
+All Hierarchical Softmax results saved in: /home/pop/Documents/Carrera/tomacode/decisionmaking-code-py/src/exercises/datos/hierarchical_softmax_game_1_5.json
+=========================================================
+
+Total time taken: 0.942986249923706 s
+============================================================
+=== EXECUTION FINISHED AT 2025-06-20 18:43:54 ===

@@ -1,0 +1,82 @@
+{
+  "lambda=0_k=0": {
+    "media": 36.00000000000001,
+    "mediana": 36.0,
+    "desviacion": 19.91649232838621
+  },
+  "lambda=0.5_k=0": {
+    "media": 36.00000000000001,
+    "mediana": 36.0,
+    "desviacion": 19.91649232838621
+  },
+  "lambda=1_k=0": {
+    "media": 36.00000000000001,
+    "mediana": 36.0,
+    "desviacion": 19.91649232838621
+  },
+  "lambda=3_k=0": {
+    "media": 36.00000000000001,
+    "mediana": 36.0,
+    "desviacion": 19.91649232838621
+  },
+  "lambda=0_k=5": {
+    "media": 36.00000000000001,
+    "mediana": 36.0,
+    "desviacion": 19.91649232838621
+  },
+  "lambda=0.5_k=5": {
+    "media": 67.66656204002648,
+    "mediana": 68.0,
+    "desviacion": 2.354348955856027
+  },
+  "lambda=1_k=5": {
+    "media": 69.06807565707625,
+    "mediana": 69.0,
+    "desviacion": 1.1570929222025572
+  },
+  "lambda=3_k=5": {
+    "media": 69.93355720047494,
+    "mediana": 70.0,
+    "desviacion": 0.26281826822210785
+  },
+  "lambda=0_k=10": {
+    "media": 36.00000000000001,
+    "mediana": 36.0,
+    "desviacion": 19.91649232838621
+  },
+  "lambda=0.5_k=10": {
+    "media": 67.72710773765404,
+    "mediana": 68.0,
+    "desviacion": 2.32132094955217
+  },
+  "lambda=1_k=10": {
+    "media": 69.11303224436465,
+    "mediana": 69.0,
+    "desviacion": 1.1315630395308764
+  },
+  "lambda=3_k=10": {
+    "media": 69.93802753434734,
+    "mediana": 70.0,
+    "desviacion": 0.2543199343649193
+  },
+  "lambda=0_k=20": {
+    "media": 36.00000000000001,
+    "mediana": 36.0,
+    "desviacion": 19.91649232838621
+  },
+  "lambda=0.5_k=20": {
+    "media": 67.72737214905115,
+    "mediana": 68.0,
+    "desviacion": 2.3211816996413965
+  },
+  "lambda=1_k=20": {
+    "media": 69.11327037903321,
+    "mediana": 69.0,
+    "desviacion": 1.1314342372626884
+  },
+  "lambda=3_k=20": {
+    "media": 69.93802811248175,
+    "mediana": 70.0,
+    "desviacion": 0.2543188124396838
+  }
+}
